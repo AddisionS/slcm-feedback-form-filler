@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+  
+  .wrapper {
+    overflow: hidden;
+    width: 180px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  .header {
+    background-color: #a7cdbd;
+    padding: 25px 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .container {
+    padding: 10px;
+  }
+  
+  .button {
+    border-radius: 8px;
+    border: 1px solid #89b9a3;
+    background-color: #bbe1c3;
+    width: 100%;
+    margin-top: 8px;
+    padding: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Trebuchet MS';
+    transition: background-color 0.2s ease-in-out;
+  }
+  .auto-submit{
+    width: 200px;
+    padding: 5px;
+    white-space: nowrap;
+  }
+  .button:hover {
+    background-color: #a7cdbd;
+  }
+  
+  /* Slider Switch Styles */
+  .switch-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #a7cdbd;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(14px);
+  }
+  
+  .switch-container span {
+    margin-left: 10px;
+    font-size: 14px;
+    width: 35px;
+    font-family: 'Trebuchet MS';
+    color: #333;
+  }
+  
