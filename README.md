@@ -13,6 +13,10 @@ To disable auto submit user can simply toggle it again
 
 ## Firefox Installation Guide
 
+[![Get it on Firefox]https://addons.mozilla.org/en-US/firefox/addon/slcm-feedback-auto-fill/
+
+or
+
 ### Installation Steps
 > **_NOTE:_**  This extension is temporarly added to browser once you close the browser it closes to.
 
