@@ -13,7 +13,7 @@ To disable auto submit user can simply toggle it again
 
 ## Firefox Installation Guide
 
-Get it on firefox: [![Get it on Firefox](https://img.shields.io/amo/v/slcm-feedback-auto-fill.svg?logo=firefox&label=Firefox&color=ff7139)](https://addons.mozilla.org/en-US/firefox/addon/slcm-feedback-auto-fill/)
+Get it on firefox [![Get it on Firefox](https://img.shields.io/amo/v/slcm-feedback-auto-fill.svg?logo=firefox&label=Firefox&color=ff7139)](https://addons.mozilla.org/en-US/firefox/addon/slcm-feedback-auto-fill/)
 
 or
 
