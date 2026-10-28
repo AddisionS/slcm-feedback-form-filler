@@ -1,20 +1,14 @@
 {
-    "manifest_version": 3,
-    "name": "SLCM Feedback Auto-Fill",
-    "version": "1.0",
-    "description": "Fills college feedback form with all YES or all NO",
-    "permissions": ["scripting", "activeTab"],
-    "host_permissions": ["<all_urls>"],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icon.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["*://*/*"],
-        "js": ["content.js"],
-        "run_at": "document_idle"
-      }
-    ]
+  "manifest_version": 3,
+  "name": "SLCM Feedback Filler",
+  "version": "2.0.0",
+  "description": "Rating-based comment helper for the SLCM feedback form.",
+  "permissions": [
+    "scripting",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
   }
-  
+}

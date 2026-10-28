@@ -1,25 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>Auto Feedback</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="header">What do you want the responses to be?</div>
-      <div class="container">
-        <button class="button" id="good">All Yes</button>
-        <button class="button" id="bad">All No</button>
-        
-        <div class="switch-container">
-          <label class="switch">
-            <input type="checkbox" id="autoSubmit">
-            <span class="slider"></span>
-          </label>
-          <span class="auto-submit">Auto Submit</span>
-        </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>SLCM Feedback Helper</title>
+</head>
+<body>
+  <main class="wrapper">
+    <header class="header">
+      <div class="eyebrow">SLCM FEEDBACK</div>
+      <h1>Feedback Filler</h1>
+      <p>Choose your overall rating.</p>
+    </header>
+    <section class="container">
+      <div class="rating-row">
+        <label for="rating">Overall rating</label>
+        <output id="ratingValue" for="rating">7/10</output>
       </div>
-    </div>
-    <script src="popup.js"></script>
-  </body>  
+      <input id="rating" type="range" min="1" max="10" value="7" step="1" />
+      <div class="scale"><span>1 · Poor</span><span>10 · Excellent</span></div>
+      <p id="ratingLabel" class="rating-label">Good</p>
+      <div class="switch-container">
+        <label class="switch" for="autoSubmit">
+          <input type="checkbox" id="autoSubmit" />
+          <span class="toggle"></span>
+        </label>
+        <div class="switch-copy"><strong>Auto-submit</strong><small>Submits after the comment is filled; answer the questions first.</small></div>
+      </div>
+      <button class="button" id="applyRating">Fill Feedback</button>
+      <p id="status" class="status" role="status"></p>
+      <p class="footnote">Your Yes/No answers are left unchanged.</p>
+    </section>
+  </main>
+  <script src="popup.js"></script>
+</body>
 </html>

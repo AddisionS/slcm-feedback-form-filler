@@ -1,106 +1,27 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-  }
-  
-  .wrapper {
-    overflow: hidden;
-    width: 180px;
-    box-sizing: border-box;
-    background-color: white;
-  }
-  
-  .header {
-    background-color: #a7cdbd;
-    padding: 25px 10px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Trebuchet MS';
-  }
-  
-  .container {
-    padding: 10px;
-  }
-  
-  .button {
-    border-radius: 8px;
-    border: 1px solid #89b9a3;
-    background-color: #bbe1c3;
-    width: 100%;
-    margin-top: 8px;
-    padding: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    font-family: 'Trebuchet MS';
-    transition: background-color 0.2s ease-in-out;
-  }
-  .auto-submit{
-    width: 200px;
-    padding: 5px;
-    white-space: nowrap;
-  }
-  .button:hover {
-    background-color: #a7cdbd;
-  }
-  
-  /* Slider Switch Styles */
-  .switch-container {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-  }
-  
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 34px;
-    height: 20px;
-  }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 50px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 12px;
-    width: 12px;
-    border-radius: 50px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #a7cdbd;
-  }
-  
-  input:checked + .slider:before {
-    transform: translateX(14px);
-  }
-  
-  .switch-container span {
-    margin-left: 10px;
-    font-size: 14px;
-    width: 35px;
-    font-family: 'Trebuchet MS';
-    color: #333;
-  }
-  
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: 300px; background: #f5f7f6; color: #1e2a25; font-family: Inter, system-ui, -apple-system, sans-serif; }
+.wrapper { overflow: hidden; background: #f5f7f6; }
+.header { padding: 20px 20px 16px; background: #d9eee2; border-bottom: 1px solid #c6e0d1; }
+.eyebrow { font-size: 10px; letter-spacing: 1.5px; font-weight: 800; color: #47755f; }
+h1 { margin: 7px 0 4px; font-size: 21px; line-height: 1.2; }
+.header p { margin: 0; font-size: 12px; color: #496457; }
+.container { padding: 18px 20px 16px; }
+.rating-row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; font-weight: 700; }
+#ratingValue { color: #28744f; font-size: 20px; font-weight: 800; }
+#rating { width: 100%; margin: 18px 0 6px; accent-color: #3d8b64; cursor: pointer; }
+.scale { display: flex; justify-content: space-between; color: #748078; font-size: 10px; }
+.rating-label { margin: 12px 0 18px; text-align: center; font-weight: 700; font-size: 13px; }
+.switch-container { display: flex; gap: 11px; align-items: flex-start; border-top: 1px solid #dfe6e1; padding-top: 15px; }
+.switch { position: relative; flex: 0 0 38px; width: 38px; height: 22px; }
+.switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+.toggle { position: absolute; inset: 0; border-radius: 20px; background: #c6cec9; cursor: pointer; transition: .2s; }
+.toggle:before { content: ''; position: absolute; width: 16px; height: 16px; left: 3px; top: 3px; border-radius: 50%; background: white; transition: .2s; box-shadow: 0 1px 3px #0002; }
+.switch input:checked + .toggle { background: #3d8b64; }
+.switch input:checked + .toggle:before { transform: translateX(16px); }
+.switch-copy { display: flex; flex-direction: column; gap: 3px; }
+.switch-copy strong { font-size: 12px; }
+.switch-copy small { color: #6b7770; font-size: 10px; line-height: 1.4; }
+.button { width: 100%; margin-top: 18px; padding: 11px; border: 0; border-radius: 9px; background: #28744f; color: white; font-size: 13px; font-weight: 750; cursor: pointer; }
+.button:hover { background: #205d40; }
+.status { min-height: 14px; margin: 9px 0 0; color: #28744f; font-size: 11px; text-align: center; }
+.footnote { margin: 8px 0 0; text-align: center; font-size: 10px; color: #7b867f; }
